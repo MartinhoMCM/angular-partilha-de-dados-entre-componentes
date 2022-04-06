@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PaiComponent implements OnInit {
 
   constructor() { }
+  message:any='';
 
   ngOnInit() {
   }
@@ -22,5 +23,9 @@ export class PaiComponent implements OnInit {
       city: 'London',
       country: 'England'
     }
+  }
+
+  handleClickedEvent(event){
+    this.message =event;
   }
 }

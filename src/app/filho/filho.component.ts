@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-filho',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilhoComponent implements OnInit {
 
+  @Input() event;
+  @Output() outPutEvent =new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
+  
+  handleClicked(){
+    this.outPutEvent.emit('Martinho Mussamba');
+  }
+
+
 
 }
