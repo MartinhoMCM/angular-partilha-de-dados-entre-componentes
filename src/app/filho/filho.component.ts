@@ -9,6 +9,7 @@ export class FilhoComponent implements OnInit {
 
   @Input() event;
   @Output() outPutEvent =new EventEmitter();
+  world:string='Mundo do Desenvolvimento';
   constructor() { }
 
   ngOnInit() {
@@ -17,7 +18,5 @@ export class FilhoComponent implements OnInit {
   handleClicked(){
     this.outPutEvent.emit('Martinho Mussamba');
   }
-
-
 
 }

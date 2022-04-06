@@ -1,6 +1,7 @@
 <div>
   <h1>Próximos Eventos do Angular</h1>
   <h1>Olá {{message}}</h1>
+  <h2>Este é o {{filho.world}}</h2>
   <hr/>
-      <app-filho [event]="event" (outPutEvent)="handleClickedEvent($event)"></app-filho>
+      <app-filho [event]="event" (outPutEvent)="handleClickedEvent($event)" #filho></app-filho>
 </div>
